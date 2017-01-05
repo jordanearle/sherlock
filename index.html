@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html style="overflow-x: hidden">
+<head>
+  <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>221b Baker Street: Heroes and Villains</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,800' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascrip t"></script>
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(function() {
+
+      var $c = $('#carousel'),
+        $w = $(window);
+
+      $c.carouFredSel({
+        align: false,
+        items: 8,
+        scroll: {
+          items: 1,
+          duration: 3000,
+          timeoutDuration: 0,
+          easing: 'linear',
+        }
+      });
+
+
+      $w.bind('resize.example', function() {
+        var nw = $w.width();
+        if (nw < 990) {
+          nw = 990;
+        }
+
+        $c.width(nw * 3);
+        $c.parent().width(nw);
+
+      }).trigger('resize.example');
+
+    });
+  </script>
+
+</head>
+
+<body>
+  <nav>
+      <ul>
+           <li><a href="#Home">Home</a></li>
+           <li><a href="#Sherlock">Sherlock Holmes</a></li>
+           <li><a href="#Watson">John Watson</a></li>
+           <li><a href="#Moriarty">James Moriarty</a></li>
+           <li><a href="#IreneA">Irene Adler</a></li>
+           <li><a href="#Adaptions">Adaptions</a></li>
+           <li><a href="#Conclusion">Conclusion</a></li>
+      </ul>
+  </nav>
+
+  <a id="Home"></a>
+  <section id="main" class="home full-height">
+    <div class="logo">
+      <img class="logomain" src="img/logo1.svg">
+    </div>
+
+    <p class="maintextlight">Sir Arthur Conan Doyle's celebrated Holme's characters have lived a life beyond the printed page.</p>
+    <p class="maintextlight">Recent adaptations, brought to life on the silver screen, include Benedict Cumberbatch and Martin Freeman's portrayal in <a class="linkwhite" href="https://en.wikipedia.org/wiki/Sherlock_(TV_series)">Sherlock</a>, Jonny Lee Miller and Lucy Liu in <a class="linkwhite" href="https://en.wikipedia.org/wiki/Elementary_(TV_series)">Elementary</a> and – more recently – Sir Ian McKellen's portrayal in <a class="linkwhite" href="https://en.wikipedia.org/wiki/Mr._Holmes">Mr Holmes.</a></p>
+    <p class="maintextlight">Conan Doyle's writings lives on from generation to generation.</p>
+  </section>
+
+  <section id="quote" class="quote full-height">
+    <div class="quotediv">
+      <p class="quotetext">&#8220;Every generation or so some kind of cycle happens, some big book or movie begins to start the process and then others seem to follow up.&#8221;</p>
+      <p class="quotecite"> — Scott Monty a member of the Sherlock Holmes Fan Fiction Group ‘Baker Street Enthusiasm Society’
+    </div>
+  </section>
+  <a id="Sherlock"></a>
+
+  <section id="sherlockholmes" class="sherlock full-height">
+    <div class="initials">
+      <img class="signature" src="img/sh.png">
+    </div>
+
+    <p class="maintext"><span class="boldtext">Sherlock Holmes</span> is a fictional private detective created by British author Sir Arthur Conan
+                        Doyle. Known as a "consulting detective" in the stories, Holmes is known for a proficiency with
+                        bservation, forensic science, and logical reasoning that borders on the fantastic, which he
+                        employs when investigating cases for a wide variety of clients, including Scotland Yard.
+                        Amongst other foibles, Holmes had a penchant for papier maché.</p>
+
+    <p class="maintext">First appearing in print in 1887 (in A Study in Scarlet), the character's popularity became
+                        widespread with the first series of short stories in The Strand Magazine, beginning with
+                        "A Scandal in Bohemia" in 1891; additional tales appeared from then to 1927, eventually
+                        totalling four novels and 56 short stories.</p>
+
+    <p class="maintext">All but one are set in the Victorian or Edwardian periods, taking place between about 1880
+                        to 1914. Most are narrated by the character of Holmes's friend and biographer Dr. Watson,
+                        who usually accompanies Holmes during his investigations and often shares quarters with him
+                        at the address of 221B Baker Street, London, where many of the stories begin.</p>
+
+    <div class="sherlockphoto"></div>
+  </section>
+
+  <a id="Watson"></a>
+
+  <section id="jw" class="johnwatson full-height">
+    <div class="initials">
+      <img class="signature" src="img/jw.png">
+    </div>
+
+    <p class="maintextlight"><span class="boldtext">Dr John H Watson</span> is a medical doctor, formerly in the
+                            British Army. He was married to Mary Watson and is arguably the only friend and
+                            confidant of Sherlock Holmes.</p>
+
+    <p class="maintextlight">In the debut Holmes story A Study in Scarlet, Watson, as the narrator, describes
+                            meeting Holmes, their subsequent sharing of rooms at 221B Baker Street,
+                            his attempts to discover the profession of his taciturn companion, Holmes's eventual
+                            taking of Watson into his confidence, and the events surrounding their first case together.
+                            Watson describes Holmes and his methods in too romantic and sentimental a manner for Holmes'
+                            taste. In time, they become close friends. </p>
+
+    <p class="maintextlight">In The Sign of Four, John Watson met Mary Morstan, who became his wife. Mary seemed
+                            somewhat less sure of her husband, however, absentmindedly calling him "James" in the short
+                            story "The Man with the Twisted Lip". This may be a simple typographical error, though
+                            some have speculated that it is a wifely reference to Watson's unknown middle name, which
+                            could have been "Hamish" (Scottish for "James") Dorothy Sayers, creator of the detective
+                            Lord Peter Wimsey, also wrote several essays on Holmesian speculation, later published
+                            this theory in Unpopular Opinions.</p>
+
+    <div class="watsonphoto">
+      <img class="johnwatsonportrait" src="img/watson.png">
+    </div>
+  </section>
+
+  <a id="Moriarty"></a>
+
+  <section id="m" class="jimmoriarty full-height">
+  <div class="column">
+      <div class="initials">
+        <img class="signature" src="img/m.png">
+      </div>
+
+  <p class="maintextlight2"><span class="boldtext">Professor James Moriarty,</span> the arch-enemy of the famous
+                            Detective Sherlock Holmes, a mathematics professor turned the world's only consulting
+                            criminal. His genius is equal to, if not perhaps greater than, Holmes himself.</p>
+
+  <p class="maintextlight2">He is the Napoleon of crime, Watson. He is the organizer of half that is evil and of nearly
+                            all that is undetected in this great city. He is a genius, a philosopher, an abstract
+                            thinker. He has a brain of the first order. He sits motionless, like a spider in the centre
+                            of its web, but that web has a thousand radiations, and he knows well every quiver of each
+                            of them. Sherlock Holmes speaking of Moriarty to Watson.</p>
+
+  <p class="maintextlight2">Despite only appearing in two stories, Moriarty has been proven to be the most dangerous
+                            of all criminals that Holmes has ever encountered. In the short story "The Adventure of
+                            the Final Problem", during a fight with Holmes above the Reichenbach Falls, Moriarty fell
+                            to his death.</p>
+  </div>
+
+  <div class="moriartyphoto">
+  </div>
+</section>
+  <a id="IreneA"></a>
+
+  <section id="irene" class="adler full-height">
+    <div class="initials">
+      <img class="signature" src="img/ia.png">
+    </div>
+
+    <p class="maintextlight"><span class="boldtext">Irene Adler</span> Irene Adler, professionally known as "The Woman",
+                                                    is a brilliant dominatrix who has an apparently romantic attraction
+                                                    to Sherlock Holmes.</p>
+
+    <p class="maintextlight">Whilst Mycroft is telling Sherlock about Irene, he states that she is a dominatrix who
+                            gives out 'recreational scolding' to people. She has been in the middle of two political
+                            scandals in recent years, one of them involving a famous author, in which she had an affair
+                            with both sides.</p>
+
+    <div class="irenephoto">
+      <img class="irene" src="img/irene.jpg">
+    </div>
+
+    <p class="maintextlight">She is brought to Sherlock's attention when he and John are summoned to Buckingham Palace
+                             by Mycroft and are asked to take on a case of national importance. Irene had taken
+                             compromising images of a young female member of the British Royal family during a
+                             dominatrix session.</p>
+
+    <p class="maintextlight">Even though Irene does not want money or power for the pictures, Sherlock is tasked
+                             in getting them back. She is using them, and other information on her mobile phone,
+                             for her "protection".</p>
+
+  </section>
+  <a id="Adaptions"></a>
+
+  <section id="adaptions" class="adaption full-height">
+    <div class="initials">
+      <img class="signature" src="img/a.png">
+    </div>
+
+    <div id="sliderwrapper">
+      <div id="carousel">
+        <div>
+          <img src="img/sh/1.jpg" alt="fruit1" width="200" height="200" />
+          <span>Apple</span>
+        </div>
+        <div>
+          <img src="img/sh/2.jpg" alt="fruit2" width="200" height="200" />
+          <span>Mandarin</span>
+        </div>
+        <div>
+          <img src="img/sh/3.jpg" alt="fruit3" width="200" height="200" />
+          <span>Banannas</span>
+        </div>
+        <div>
+          <img src="img/sh/4.jpg" alt="fruit4" width="200" height="200" />
+          <span>Cherries</span>
+        </div>
+        <div>
+          <img src="img/sh/5.jpg" alt="fruit5" width="200" height="200" />
+          <span>Orange</span>
+        </div>
+        <div>
+          <img src="img/sh/6.jpg" alt="fruit6" width="200" height="200" />
+          <span>Melon</span>
+        </div>
+        <div>
+          <img src="img/sh/7.jpg" alt="fruit7" width="200" height="200" />
+          <span>Lemon</span>
+        </div>
+        <div>
+          <img src="img/sh/8.jpg" alt="fruit8" width="200" height="200" />
+          <span>Grapes</span>
+        </div>
+        <div>
+          <img src="img/sh/9.jpg" alt="fruit9" width="200" height="200" />
+          <span>Peach</span>
+        </div>
+        <div>
+          <img src="img/sh/10.jpg" alt="fruit10" width="200" height="200" />
+          <span>Pear</span>
+      </div>
+    </div>
+    </div>
+
+    <p class="maintextlight">Sir Arthur Conan Doyle's celebrated Holme's characters have lived a life beyond the
+                             printed page. Guinness World Records has listed Holmes as the "most portrayed movie
+                             character", with more than 70 actors playing the part in over 200 films. It has also been
+                             estimated that Sherlock Holmes is the most prolific screen character in the history of
+                             cinema.</p>
+
+    <p class="maintextlight">Recent adaptations, brought to life on the silver screen, include Benedict Cumberbatch and Martin Freeman's portrayal in <a class="linkwhite" href="https://en.wikipedia.org/wiki/Sherlock_(TV_series)">Sherlock</a>, Jonny Lee Miller and Lucy Liu in <a class="linkwhite" href="https://en.wikipedia.org/wiki/Elementary_(TV_series)">Elementary</a> and – more recently – Sir Ian McKellen's portrayal in <a class="linkwhite" href="https://en.wikipedia.org/wiki/Mr._Holmes">Mr Holmes.</a></p>
+
+  </section>
+
+  <a id="Conclusion"></a>
+
+  <section id="conclude" class="inconclusion full-height">
+    <p class="maintextlight">This web site is a homage to the Holmes' story and was created as a piece of coursework for the <a class="linkwhite" href="http://www.ixdbelfast.org">BDes (Hons) Interaction Design</a> programme at the Belfast School of Art.</p>
+    <p class="maintextlight">Ethan Marcotte kindly granted his permission to re-develop his original site, designed for A List Apart in 2010, when Marcotte coined the term  <a class="linkwhite" href="http://alistapart.com/article/responsive-web-design">Responsive Web Design</a>
+    <br>
+
+    <div class="credits">
+      <p class="creditstextbold">Copyright (C) 2016, Christopher Murphy, #ixdbelfast</p>
+      <p class="creditstext">The content on this page draws on copy from Wikipedia. This has been reworked to incorporate a comprehensive set of HTML5 elements to ensure semantics is full explored.</p>
+    </div>
+  </section>
+
+  <section id="footer" class="footer full-height">
+     <CENTER>
+     <br />
+   <div class="AnimatedMonogram">
+   <svg class="MonogramLogo3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" viewBox="0 0 350 350" version="1.1">
+  <style type="text/css">.st2{fill:none;stroke:#9B9B9B;stroke-width:8;stroke-miterlimit:10;stroke-dasharray: 1000;stroke-dashoffset: 1000;animation: dash 5s linear forwards infinite;}
+          @keyframes dash {
+                            to {
+                                stroke-dashoffset: 0;}
+  </style>
+  <g id="Monogram">
+  <path id="Monogram-Shape" class="st2" d="M185.7 22.6h84.7v54.2h-94.3L185.7 22.6 185.7 22.6zM168 129.4h102.4v60.2H156.5L168 129.4 168 129.4zM143 246.4c0 0-22.1 0-32.5 0h-31v79.4h69.1c33.3 0 68.6-2.4 94.3-27.1 25.2-24.3 26.2-52.3 26.2-52.3H143L143 246.4z"></path>
+  </g>
+  </svg>
+  </div></CENTER>
+  <br />
+  <hr class="footerhr"/>
+  <br />
+  <center>
+  <span class="FooterLinkType"><a class="FooterLinkStyle" href="http://jordanearle.com"> JORDAN EARLE 2017</a> | <a class="FooterLinkStyle" href="http://twitter.com/jte">TWITTER</a></span>
+  </center>
+  <Br />
+  <center>
+  <span class="EndQuote">You lost today, kid, but that doesn't mean you have to like it.</span>
+  </center>
+  </section>
+
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+
+  <script src="js/index.js"></script>
+
+  <script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+</body>

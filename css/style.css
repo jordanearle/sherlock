@@ -1,0 +1,423 @@
+/* Layout */
+
+a {
+  text-decoration: none;
+  color: #000;}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  min-width: 480px;
+  overflow: hidden;
+  background-color: #121212;}
+
+.home {
+  background-image: url(../img/bg.jpg);
+  height: 730px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  background-color: #f4f4f4;}
+
+.quote {
+  margin-top: -3em;
+  background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.7)),url(../img/sherlock.gif);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quotediv {
+  padding-top: 2em;
+  width: 70%;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;}
+
+.sherlock {
+  height: 1000px;
+  background: url(../img/bgtexture.png), #E1BB00;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+
+.johnwatson {
+  height: 1050px;
+  background-image: url(../img/wallpaper.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.adler {
+  margin-top: -1em;
+  height: 1200px;
+  background-image: url(../img/bgred.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+
+.adaption {
+  height: 850px;
+  background-color: #191919;
+}
+
+.inconclusion {
+  height: 390px;
+  background-color: #151515;
+}
+
+.sherlockphoto {
+  margin-top: 1em;
+  height: 350px;
+  width: 100%;
+  background: url(../img/sherlock.png), #E1BB00;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: -2em;
+  background-blend-mode: multiply;}
+
+.watsonphoto {
+  margin-top: 2em;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.jimmoriarty {
+  height: 750px;
+  background-image: url(../img/grunge.jpg);
+  background-blend-mode: multiply;}
+
+.column {
+  width: 700px;
+  height: 100%;
+  display: inline-block;
+  margin-right: 1em;}
+
+.moriartyphoto {
+    background-image: url(../img/moriarty.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 110%;
+    width: 550px;
+    margin-right: -10em;
+    position: absolute;
+    display: inline-block;}
+
+.initials {
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.footer {
+  height: 300px;
+}
+
+nav {
+  padding: 2em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0.02em;
+  width: 100%;
+  background: #161616;
+  opacity: 0.95;
+  z-index: 10001;}
+
+nav ul {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 0px;}
+
+nav ul li {
+  display: inline;
+  margin: 20px;}
+
+nav a:hover{
+  border-bottom: 2px solid #E1BB00;
+  color: #E1BB00;
+  transition: opacity 0.4s ease-in;}
+
+nav a.active{
+  border-bottom: 2px solid #E1BB00;
+  color: #E1BB00;
+  transition: opacity 0.4s ease-in;}
+
+hr {
+  border: 0;
+  width: 50%;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.05));
+  margin-top: 2em;
+  margin-bottom: 2em;
+  opacity: 0.4;}
+
+.hrwhite {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
+
+.hryellow {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 206, 0, 0.3);
+  margin-top: -1em;}
+
+.footerhr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,255,255, 0.75), rgba(255,255,255, 0));
+  width: 50%;
+  opacity: 0.2;}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.irenephoto {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.credits {
+margin-left: 20em;
+}
+
+
+
+/* Typography */
+
+a {
+  text-decoration: none;}
+
+a:hover {}
+
+.maintext {
+  margin-top: -1em;
+  padding-top: 1.2em;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #000;
+  line-height: 1.7em;}
+
+.boldtext {
+  font-weight: bold;
+}
+
+.maintextlight {
+  margin-top: -1em;
+  padding-top: 1.2em;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 100;
+  opacity: 0.8;
+  line-height: 1.7em;}
+
+.maintextlight2 {
+  margin-top: -1em;
+  padding-top: 1.2em;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 100;
+  opacity: 0.8;
+  line-height: 1.7em;}
+}
+
+a {
+  color: #fff
+}
+
+a.linkwhite:hover {
+  color: #E1BB00;
+  font-weight: 600;}
+
+a.linkwhite {
+  color: #fff;
+  font-weight: 600;}
+
+.maintextlight::selection {
+  background: #ffce00;}
+
+.dropcap {
+  float: left;
+  color: #ffce00;
+  font-size: 65px;
+  line-height: 50px;
+  padding-top: 4px;
+  padding-right: 10px;
+  font-family: 'Open Sans', sans-serif;}
+
+.quotetext {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 45px;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.quotecite {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  opacity: 0.6;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 15em;
+}
+
+li a {
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  color: #F3F3F3;
+  text-decoration: none;}
+
+
+li:hover a {
+  color: #E1BB00;
+  padding-bottom: 0.1em;}
+
+li:active a {
+  color: #E1BB00;
+  padding-bottom: 0.1em;}
+
+.FooterLinkType {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 200;
+  line-height: 1.5em;}
+
+a.FooterLinkStyle  {
+  color: #D4D4D4;
+  text-decoration: none;
+  border-bottom: 2px solid #E1BB00;}
+
+a.FooterLinkStyle:hover  {
+  background: #E1BB00;
+  Color: #000;
+  border-bottom: 2px solid #E1BB00;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  transition: background .5s ease-in-out;}
+
+.EndQuote {
+  font-family: 'Open Sans', sans-serif;
+  font-size:12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 0.3;
+  color: #B4B4B4;}
+
+.creditstextbold {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #A1A1A1;
+  margin-top: 3em;
+  }
+
+.creditstext {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 200;
+  color: #A1A1A1;
+  width: 60%;
+  }
+
+  /* Images */
+
+.textimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 45%;
+  padding-bottom: 3em;}
+
+.textimagelarge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 80%;
+  padding-bottom: 3em;}
+
+.logomain {
+  display: block;
+  }
+
+.signature {
+  width: 250px;
+  margin-top: 2em;
+  margin-bottom: 2em;}
+
+.johnwatsonportrait {
+  height: 95%;
+}
+
+.jim {
+  height: 800px;
+  position: absolute;
+  z-index: 1;}
+
+.irene {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* carousel */
+
+#sliderwrapper {
+				width: 100%;
+				height: 50%;
+				position: relative;
+				left: 2;
+        margin-top: 7em;
+        margin-bottom: -6em;
+}
+
+	#carousel {
+				margin-top: -100px;
+
+			}
+			#carousel div {
+				text-align: center;
+				height: 320px;
+                width: 220px;
+				float: left;
+				position: relative;
+                padding-right: 2em;
+			}
+			#carousel div img {
+				border: none;
+                height: 320px;
+                width: 220px;
+			}
+			#carousel div span {
+				display: none;
+			}
